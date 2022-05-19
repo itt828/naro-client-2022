@@ -1,6 +1,7 @@
 import { createRouter, createWebHistory } from "vue-router";
 import Home from "./pages/Home.vue";
 import Axios from "./pages/Axios.vue";
+import City from "./pages/City.vue";
 import Login from "./pages/Login.vue";
 import NotFound from "./pages/NotFound.vue";
 
@@ -8,6 +9,7 @@ const routes = [
   { path: "/", component: Home },
   { path: "/axios", component: Axios },
   { path: "/login", component: Login },
+  { path: "/city/:cityName", component: City },
   { path: "/:path(.*)", component: NotFound },
 ];
 
