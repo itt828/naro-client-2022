@@ -21,7 +21,11 @@ const routes = [
     component: Login,
     meta: { isPublic: true },
   },
-  { path: "/city/:cityName", component: City },
+  {
+    path: "/city/:cityName",
+    component: City,
+    props: true,
+  },
   {
     path: "/:path(.*)",
     component: NotFound,
